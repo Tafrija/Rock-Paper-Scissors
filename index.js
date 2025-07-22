@@ -1,21 +1,15 @@
 let humanScore = 0;
      computerScore = 0;
 
-function getComputerChoice() {
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
-
-    if (randomNumber === 1) {
-        return "Rock";
-    } else if (randomNumber === 2) {
-        return "Paper";
-    } else {
-        return "Scissors";
-    }
-}
+      computerChoice = ["Rock", "Paper" , "Scissors"]
+  function getComputerChoice(){
+    let randomIndex = Math.floor(Math.random() * 3);
+    return computerChoice[randomIndex]
+  }
 
 function getHumanChoice() {
     let choice = prompt("Enter your Choice: 1 for Rock, 2 for Paper, 3 for Scissors");
-    let humanChoice = parseInt(choice); // Convert input to a number
+    let humanChoice = parseInt(choice);
 
     if (humanChoice === 1) {
         return "Rock";
@@ -50,7 +44,7 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-// Play a single round
+//Play a single round
 let human = getHumanChoice();
 let computer = getComputerChoice();
 console.log(`You chose: ${human}`);
