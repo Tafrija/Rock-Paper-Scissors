@@ -7,9 +7,12 @@
 
 
 // 1. Possible options
+// variable initialized
 let options = ['rock', 'paper', 'scissors'];
 
-
+ let humanScore = 0;
+    computerScore = 0;
+ 
 // 2. Key Players.
 function getComputerChoice() {
   const choice = options[Math.floor(Math.random() * options.length)];
@@ -63,8 +66,7 @@ function checkWinner(playerSelection, computerSelection) {
 
 // 4. Analysis
 function game() {
-  let humanScore = 0;
-  let computerScore = 0;
+  
 
   console.log("Welcome to Rock Paper Scissors!");
 
