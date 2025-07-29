@@ -1,0 +1,11 @@
+body{
+    font-size: medium;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: #bbb;
+}
